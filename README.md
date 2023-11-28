@@ -1,0 +1,2 @@
+# WalletBridge_vHTML
+Basic HTML implementation Veralidity_WalletBridge
