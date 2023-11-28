@@ -1,0 +1,175 @@
+.my-wallet-label {
+    display: none;
+}
+
+.wallet-dropdown {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: none; /* Initially hidden */
+    position: absolute; /* Absolute positioning */
+    z-index: 1000; /* High z-index to ensure it's above other elements */
+    background-color: white; /* Background color for readability */
+    width: 100%; /* Full width on smaller screens */
+    max-width: 250px;
+    top: 100%; /* Position directly below the trigger */
+    left: 0; /* Align with the left edge of the parent */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Optional: Adds a shadow for better visibility */
+}
+
+.switcher-options.active .wallet-dropdown {
+    display: block; /* Show when active */
+}
+
+.connect-wallet-menu-item {
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 10px;
+    background-color: white; /* Ensure readability */
+    border-bottom: 1px solid #ddd;
+}
+
+.connect-wallet-menu-item:hover {
+    background-color: #f0f0f0;
+}
+
+/* Example Wallet Logo Styling */
+.nautilus-logo,
+.gerowallet-logo,
+.yoroi-logo,
+.lace-logo,
+.flint-logo,
+.typhon-logo,
+.eternl-logo,
+.nami-logo,
+.exodus-logo,
+.nufi-logo {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left center;
+    padding-left: 30px; /* Adjust as needed */
+}
+
+/* Wallet Trigger and Dropdown Styling */
+#switcher-wallet-nav {
+    margin-right: 0 !important;
+    position: relative;
+    width: 100%; /* Full width on smaller screens */
+    cursor: pointer;
+}
+
+#switcher-wallet-trigger-nav:after {
+    content: none;
+}
+
+#switcher-wallet-trigger-nav:not(.field-tooltip) {
+    margin: 0;
+}
+
+#switcher-wallet-trigger-nav strong {
+    display: none;
+}
+
+.wallet-switcher-options .action.toggle:after {
+    content: none;
+}
+
+#switcher-wallet-trigger-nav {
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+#switcher-wallet-trigger-nav:before {
+    color: #1da1dc;
+    content: "\e02a";
+    font-family: 'Simple-Line-Icons';
+}
+
+/*#switcher-wallet-trigger-nav.active:before {
+    content: "\e013";
+}*/
+
+#cardano-connect-container li {
+    padding: 8px 8px 8px 42px;
+    background-size: 24px 24px;
+    background-position: left 8px bottom 50%;
+    background-repeat: no-repeat;
+}
+
+.gerowallet-logo {
+    background-image: url("../images/logos/wallets/gerowallet-logo.png");
+}
+
+.yoroi-logo {
+    background-image: url("../images/logos/wallets/yoroi-logo.png");
+}
+
+.lace-logo {
+    background-image: url("../images/logos/wallets/lace-logo.png");
+}
+
+.flint-logo {
+    background-image: url("../images/logos/wallets/flint-logo.png");
+}
+
+.typhon-logo {
+    background-image: url("../images/logos/wallets/typhon-logo.png");
+}
+
+.eternl-logo {
+    background-image: url("../images/logos/wallets/eternl-logo.png");
+}
+
+.nami-logo {
+    background-image: url("../images/logos/wallets/nami-logo.png");
+}
+
+.exodus-logo {
+    background-image: url("../images/logos/wallets/exodus-logo.png");
+}
+
+.nufi-logo {
+    background-image: url("../images/logos/wallets/nufi-logo.png");
+}
+
+.nautilus-logo {
+    background-image: url("../images/logos/wallets/nautilus-logo.png");
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 768px) {
+    .wallet-dropdown {
+        max-width: 100%;
+    }
+    /*.my-wallet-label:after {
+        content: "\e02a";
+        font-family: 'Simple-Line-Icons';
+        margin-left: 15px;
+    }*/
+
+    #switcher-wallet-trigger-nav {
+        margin-left: 0;
+    }
+
+    #switcher-wallet-trigger-nav strong {
+/*        display: block;*/
+    }
+
+    /*#switcher-wallet-trigger-nav:before {
+        content: none;
+    }
+
+    .wallet-switcher-options .action.toggle.active:after {
+        content: none;
+    }*/
+    #switcher-wallet-nav {
+        max-width: 100%;
+    }
+    #cardano-connect-container li {
+/*        font-size: 3rem;*/
+    }
+}
+
+@media all and (min-width: 768px), print {
+    /* Additional styles for larger screens and print */
+}

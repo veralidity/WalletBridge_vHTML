@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" integrity="sha512-QKC1UZ/ZHNgFzVKSAhV5v5j73eeL9EEN289eKAEFaAjgAiobVAnVv/AGuPbXsKl1dNoel3kNr6PYnSiTzVVBCw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" type="text/css" href="pub/css/styles.css"/>
+<script type="text/javascript" src="https://cardano-foundation.github.io/cardano-connect-with-wallet/bundle-latest/index.js"></script>
+<script type="text/javascript" src="pub/js/cardano-connect.js"></script>
+
+
+<div class="switcher wallet switcher-wallet" id="switcher-wallet-nav">
+    <strong class="label switcher-label">
+        <span class="my-wallet-label">My Wallet</span>
+    </strong>
+    <div class="actions dropdown options switcher-options wallet-switcher-options">
+        <div class="action toggle switcher-trigger" id="switcher-wallet-trigger-nav" role="button" tabindex="0">
+            <strong>
+                <span>Connect Wallet</span>
+            </strong>
+        </div>
+        <ul class="dropdown switcher-dropdown wallet-dropdown cardano-connect-container" id="cardano-connect-container" aria-hidden="true">
+            <!-- Wallet items will be populated here dynamically -->
+        </ul>
+    </div>
+</div>
