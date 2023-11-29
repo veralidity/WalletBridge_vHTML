@@ -46,6 +46,9 @@ Replace path/to/your/ with the actual paths where your CSS and JavaScript files 
 </div>
 ```
 
+### PoC
+This is a Proof of Concept, and is not finalized, nor does it incorporate everything that the original authors had implemented. Please build upon this and make it better. If you encounter issues I'm more than happy to help to an extent, but this is provided as-is, and without gaurantees or warantees. Use at your own risk. With that, have fun, cheers.
+
 ## Magento 2 Extension
 
 For Adobe Commerce Magento 2 users, we also offer a Magento 2 extension version of WalletBridge. You can find it at [Veralidity WalletBridge for Magento 2](https://github.com/veralidity/WalletBridge).
