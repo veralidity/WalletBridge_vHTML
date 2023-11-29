@@ -8,7 +8,8 @@ This repository contains the HTML and JavaScript implementation of Veralidity's 
 - Dynamic wallet connection interface.
 - Supports multiple Cardano wallets.
 - Customizable CSS for easy styling.
-- Compatible with desktop and mobile browsers.
+- Compatible with desktop and mobile browsers*
+    - Although the UI works on mobile, we need to handle the mobile wallet integration itself, so if integrating this into your project you will want to build upon this or hide the wallet icon via CSS for mobile only so you don't confuse people as to why they can't connect to a wallet.
 
 ## Installation
 
